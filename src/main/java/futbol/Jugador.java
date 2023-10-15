@@ -20,7 +20,8 @@ public class Jugador extends Futbolista {
         return super.toString() + " con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
     }
     //implementar interface
-    public int compareTo(Futbolista p) {
-        return Math.abs(this.getEdad() - p.getEdad());
+    public int compareTo(Object p) {
+        Jugador p1 = (Jugador) p;
+        return Math.abs(this.getEdad() - p1.getEdad());
     }
 }

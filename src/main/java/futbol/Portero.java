@@ -15,7 +15,7 @@ public class Portero extends Futbolista {
         return true;
     }
     //implementar interface
-    public int compareTo(Futbolista p) {
+    public int compareTo(Object p) {
         int a = (int) this.golesRecibidos;
         Portero p1 = (Portero) p;
         int b = (int) p1.golesRecibidos;
